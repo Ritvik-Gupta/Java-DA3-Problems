@@ -17,6 +17,7 @@ public final class Main {
       System.out.print("Enter the Rack where the Book is to be placed :\t");
       int rackNo = S.nextInt();
 
+      S.nextLine();
       if (rackNo < 0)
          throw new RangeException((short) -1, "Rack Number should be positive");
 
@@ -59,12 +60,12 @@ public final class Main {
                promptForBookInfo();
 
             else if (searchRegex.matcher(command).matches()) {
-               String bookName = command.substring(8);
+               String bookName = command.substring(7);
                System.out.println("\nBook has been found in the Rack [ " + library.search(bookName) + " ]");
             }
 
             else if (sortRegex.matcher(command).matches()) {
-               int rackNo = Integer.parseInt(command.substring(6));
+               int rackNo = Integer.parseInt(command.substring(5));
                List<Book> sortedRack = library.sort(rackNo);
 
                System.out.println("\nNumber of Books in the Rack :\t" + sortedRack.size());
@@ -81,6 +82,7 @@ public final class Main {
             System.out.println("Range Error :\t" + err.getMessage());
          } catch (Exception err) {
             System.out.println("Error :\t" + err.getMessage());
+            err.printStackTrace();
          }
       }
    }

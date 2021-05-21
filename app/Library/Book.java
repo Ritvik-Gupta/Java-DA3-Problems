@@ -26,9 +26,9 @@ public final class Book implements Comparable<Book> {
    public String toString() {
       return "\n" +
       "\n\tName :\t" + name + 
-      "\tAuthor :\t" + author + 
-      "\tPrice :\t" + price + 
-      "\tNumber of Copies :\t" + numCopies;
+      "\n\tAuthor :\t" + author + 
+      "\n\tPrice :\t" + price + 
+      "\n\tNumber of Copies :\t" + numCopies;
    }
 
    public static int compare(Book bookA, Book bookB) {
