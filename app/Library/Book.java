@@ -1,10 +1,10 @@
 package app.Library;
 
 public final class Book implements Comparable<Book> {
-   public final String name;
-   public final String author;
-   public final int price;
-   public final int numCopies;
+   private final String name;
+   private final String author;
+   private final int price;
+   private final int numCopies;
 
    public Book(String name, String author, int price, int numCopies) {
       this.name = name;

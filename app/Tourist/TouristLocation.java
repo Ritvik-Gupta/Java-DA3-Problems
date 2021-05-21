@@ -1,9 +1,9 @@
 package app.Tourist;
 
 public final class TouristLocation implements Comparable<TouristLocation> {
-   public final String name;
-   public final String state;
-   public final String famousSpot;
+   private final String name;
+   private final String state;
+   private final String famousSpot;
 
    public TouristLocation(String name, String state, String famousSpot) {
       this.name = name;
