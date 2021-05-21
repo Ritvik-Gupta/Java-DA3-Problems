@@ -82,7 +82,6 @@ public final class Main {
             System.out.println("Range Error :\t" + err.getMessage());
          } catch (Exception err) {
             System.out.println("Error :\t" + err.getMessage());
-            err.printStackTrace();
          }
       }
    }
