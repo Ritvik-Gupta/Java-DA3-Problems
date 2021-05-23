@@ -8,7 +8,6 @@ public final class ProductSample implements Serializable {
    public final int length;
    public final int weight;
 
-   // Default constructor
    public ProductSample(String productId, int diameter, int length, int weight) {
       this.productId = productId;
       this.diameter = diameter;
